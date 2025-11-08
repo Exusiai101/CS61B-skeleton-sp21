@@ -27,7 +27,7 @@ public class Collatz {
         }else if (isOdd(n)) {
             return 3*n+1;
         }
-        return 1;
+        return 1 ;
     }
 
     public static void main(String[] args) {
