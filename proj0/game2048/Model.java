@@ -140,7 +140,7 @@ public class Model extends Observable {
         // TODO: Fill in this function.
         for (int col = 0; col < b.size(); col++) {
             for (int row = 0; row < b.size(); row++) {
-                if (b.tile(col, row) != null) {
+                if (b.tile(col, row) == null) {
                     return true;
                 }
             }
@@ -157,7 +157,7 @@ public class Model extends Observable {
         // TODO: Fill in this function.
         for (int col = 0; col < b.size(); col++) {
             for (int row = 0; row < b.size(); row++) {
-                if (b.tile(col, row).value() == MAX_PIECE) {
+                if (b.tile(col,row) != null && b.tile(col, row).value() == MAX_PIECE) {
                     return true;
                 }
             }
@@ -173,6 +173,7 @@ public class Model extends Observable {
      */
     public static boolean atLeastOneMoveExists(Board b) {
         // TODO: Fill in this function.
+
         return false;
     }
 
